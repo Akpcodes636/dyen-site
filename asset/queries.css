@@ -1,0 +1,239 @@
+@media (max-width: 56em) {
+  .container {
+    max-width: 70rem;
+    margin: 0 auto;
+    /* background-color: red; */
+    /* padding: 1rem; */
+  }
+  .logo {
+    padding: rem;
+  }
+
+  .nav {
+    display: none;
+  }
+  .img img {
+    display: none;
+  }
+  #hero .container .left {
+    display: none;
+  }
+  #hero .container .right {
+    text-align: center;
+
+    /* background-color: blue; */
+    width: 100%;
+    margin-top: 17.5rem;
+  }
+  #hero .container .right .section-heading {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .description {
+    text-indent: 50px;
+    font-size: 50%;
+  }
+  .bigText {
+    text-align: center;
+  }
+  .paragraph p {
+    font-size: 0.8rem;
+    line-height: 1.7;
+    font-weight: 500;
+    margin-top: 1.875rem;
+  }
+  .btn {
+    padding: 0.5rem;
+  }
+  .icon img {
+    margin-left: 2.5rem;
+    object-fit: contain;
+  }
+  .Bold {
+    display: none;
+  }
+  .left h1 {
+    margin-top: 8rem;
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 0.7rem;
+  }
+  .grid-container > div {
+    height: 8rem;
+    width: 6rem;
+  }
+  .btn--explore button {
+    margin-bottom: 5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .img-cont img {
+    width: 300%;
+    height: 180%;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+    height: 100%;
+  }
+  body {
+    position: relative;
+  }
+  #third .image .img-cont img {
+    width: 18.75rem;
+  }
+  .fourth-wrapper {
+    flex-direction: column-reverse;
+  }
+  .bottom {
+    width: 100%;
+  }
+  .top {
+    width: 100%;
+  }
+  .top img {
+    width: 100%;
+    margin-right: 30rem;
+  }
+  .color {
+    text-align: center;
+  }
+  .bottom p {
+    /* background-color: red; */
+    text-align: middle;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  .fourth--text {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.1;
+    font-weight: 900;
+  }
+  .btn--fourth {
+    padding: 0.5rem;
+    text-align: left;
+  }
+  .slide video {
+    width: 400px;
+    margin-right: 900px;
+  }
+  .sponsership--wrapper--item {
+    flex-direction: column-reverse;
+  }
+  .item {
+    height: 27rem;
+    width: 21rem;
+  }
+  .item:hover {
+    transform: scale(1);
+  }
+  .wrapper--footer {
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+  .wrapper-info {
+    width: 100%;
+    text-align: center;
+  }
+  .wrapper--form form .footer--input {
+    width: 1000px;
+    margin-left: 19px;
+    /* background-color: red; */
+  }
+  .wrapper--form form input::placeholder {
+    color: rgb(78, 78, 78);
+    font-weight: 500;
+  }
+  .wrapper--form form {
+    border: 2px solid rgb(70, 70, 70);
+    width: 350px;
+    margin-top: 15px;
+  }
+  .btn--form {
+    margin-left: 1px;
+    padding: 2px 4px;
+  }
+  .wrapper--copyright {
+    display: none;
+  }
+  .smallscreen-wrapper {
+    display: block;
+    padding: 2rem;
+    background-color: #e9ebf7;
+    width: 100%;
+    min-height: 50vh;
+  }
+  .links {
+    font-size: 20px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+  }
+  .col1 {
+    margin-bottom: 20px;
+  }
+  .col2 {
+    margin-bottom: 20px;
+  }
+  .col3 {
+    margin-bottom: 20px;
+  }
+  .col4 {
+    margin-bottom: 20px;
+  }
+  .col5 {
+    margin-bottom: 20px;
+  }
+  .col6 {
+    margin-bottom: 20px;
+  }
+  .picture-wrapper {
+    padding: 0.3rem;
+  }
+  .slide {
+    right: 0px;
+    left: 5px;
+  }
+  .first {
+    margin-right: 1.2rem;
+    font-size: 0.3rem;
+  }
+  .second {
+    margin-right: 1.2rem;
+    font-size: 0.3rem;
+  }
+  .third {
+    margin-right: 1.2rem;
+    font-size: 0.3rem;
+  }
+}
+
+@media (max-width: 30em) {
+  #third .third-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .vision .content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 43.2em) and (max-width: 75em) {
+  #hero {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 215, 0),
+      rgba(255, 255, 255, 0)
+    );
+  }
+  .btn {
+    margin-left: 10rem;
+  }
+  .section-heading h3 {
+    margin-top: 10rem;
+  }
+} ;
