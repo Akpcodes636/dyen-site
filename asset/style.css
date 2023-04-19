@@ -170,6 +170,7 @@ img {
 #hero .btn a {
   display: flex;
   align-items: center;
+  gap: 0.2rem;
 }
 
 /* the second section */
@@ -376,6 +377,7 @@ img {
   background-image: url(./img/background\ image.jpg);
   width: 100%;
   min-height: 70vh;
+  padding: 5rem;
 }
 .new-Page {
   display: flex;

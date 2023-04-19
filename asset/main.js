@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 // aos
 AOS.init({
   offset: 200,
