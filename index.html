@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="./asset/style.css">
     <link rel="stylesheet" href="./asset/queries.css">
+    <link rel="stylesheet" href="./asset/general.css">
      <link rel="icon" type="image/x-icon" href="./asset/logo/dyen logo.png">
 </head>
 <body>
@@ -19,62 +20,69 @@
       </div>
       <div class="nav">
           <div class="input">
-              <input type="search" placeholder="search for courses ">
+              <input type="search" placeholder="Search for courses ">
           </div>
           <ul>
-              <li><a href="#">Program</a></li>
+              <li><a href="#">Programs</a></li>
               <li><a href="#">Community</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Store</a></li>
           </ul>
       </div>
+      <div class="nav--bar">
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+      </div>
+      <div class="nav--bar-Close">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>  
+      </div>
     </div>
   </header>
-  <!--- start of hero section  -->
-   <section id="hero">
-    <div class="container">
-        <div class="right" data-aos="fade-right">
-         <div class="section-heading">
-           <h3>Transforming Lives 
-             via Mentorship and 
-             Innovation </h3>
-         </div>
-         <div class="paragraph">
-          <p>
-            A network focused on equipping youths through <br> 
-            empowerment initiatives, training, mentorship, <br>
-            and innovative programs.</p>
-         </div>
-         <div class="btn">
-            <button>Apply Now</button>
-            
-              <a href="#"> <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
-                </svg>
-                </span>See Videos</a>
-            
-         </div>
-        </div>
-        <div class="left" data-aos="fade-left">
-          <div class="img">
-            <img src="./asset/img/Group377 (2).png" alt="image of dyen supervisors">
-          </div>
-        </div>
+  <!-- cusor code
+  <div class="cursor"></div>
+<div class="cursor-follower"></div> -->
+<!-- End of cusor code -->
+<!--- start of hero section  -->
+   <section class="section--hero">
+    <div class="hero">
+      <div class="hero--text-box">
+        <h1 class="heading-primary">
+          Transforming Lives via Mentorship and Innovation
+        </h1>
+        <p class="hero-description">
+          A network focused on equipping youths through empowerment initiatives, training, mentorship, and innovative programs.
+        </p>
+     <div class="buttons">
+      <button class=" hero--btns">Apply Now</button>
+       <a href="#" class="anchor">                       
+         <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                  </svg><span class="spans-text">See Videos</span>
+       </a>    
+     </div>
+    </div>
+    <div class="hero--img-box">
+     <img class="img-box"src="./asset/img/Group377 (2).png" alt="">
+    </div>
     </div>
    </section>
+
   <!---End of hero section-->
 
   <!-- start 0f second container-->
-<section id="second">
+<section class="discover--programs height-100">
   <div class="container">
     <div class="left" data-aos="fade-up">
-      <h1>  Networking, High Income Skill Development and
-         Financial Independence                             </h1>
+      <h3 class="second--heading">  Networking, High Income Skill Development and
+         Financial Independence                             </h3>
          <p class="description"> We tackle the globally increasing unemployment rate and uneven wealth distribution  by providing a platform for training, mentorship, and internship placements to help youths develop
            the skills necessary to start their own businesses or land high-income jobs</p>
     </div>
-       
+       <!-- grid section -->
     <div class="grid-container">
         <div class="card" data-aos="flip-up">
           <div class="icon">
@@ -83,32 +91,19 @@
             </div>
           </div>
           <div class="Bold">
-            <h3>Internship Placement</h3>
-            <p>Get Real-world experience</p>
+            <h5>100% Free Scholarship</h5>
+            <p>You don't pay a dime</p>
           </div>
         </div>
         <div class="card" data-aos="flip-up">
           <div class="icon">
             <div class="icon-container">
-              <img src="./asset/img/Group 379 (2).png" alt="">
+              <img src="./asset/img/star.png" alt="">
             </div>
           </div>
           <div class="Bold">
-            <h3>Internship Placement</h3>
-            <p>Get Real-world experience</p>
-
-          </div>
-        </div>
-        <div class="card" data-aos="flip-up">
-          <div class="icon">
-            <div class="icon-container">
-              
-              <img src="./asset/img/Group 379 (2).png" alt="">
-            </div>
-          </div>
-          <div class="Bold">
-            <h3>Internship Placement</h3>
-            <p>Get Real-world experience</p>
+            <h5>Expert Mentors</h5>
+            <p>Get caught by experts</p>
 
           </div>
         </div>
@@ -120,8 +115,8 @@
             </div>
           </div>
           <div class="Bold">
-            <h3>Internship Placement</h3>
-            <p>Get Real-world experience</p>
+            <h5>Physical Classes</h5>
+            <p>One-on-One with tutors</p>
 
           </div>
         </div>
@@ -129,12 +124,12 @@
           <div class="icon">
             <div class="icon-container">
               
-              <img src="./asset/img/Group 379 (2).png" alt="">
+              <img src="./asset/img/pro.png" alt="picture of pro">
             </div>
           </div>
           <div class="Bold">
-            <h3>Internship Placement</h3>
-            <p>Get Real-world experience</p>
+            <h5>Professional Programs</h5>
+            <p>Learn High Income skills</p>
 
           </div>
         </div>
@@ -142,13 +137,25 @@
           <div class="icon">
             <div class="icon-container">
               
-              <img src="./asset/img/Group 379 (2).png" alt="">
+              <img src="./asset/img/hand-ups.png" alt="picture of a empowerment icon">
             </div>
           </div>
           <div class="Bold">
-            <h3>Internship Placement</h3>
-            <p>Get Real-world experience</p>
+            <h5>Empowerment</h5>
+            <p>Empowerment & Networking</p>
 
+          </div>
+        </div>
+        <div class="card" data-aos="flip-up">
+          <div class="icon">
+            <div class="icon-container">
+              
+              <img src="./asset/img/add-up.png" alt="picture of add up icon">
+            </div>
+          </div>
+          <div class="Bold">
+            <h5>Internship Placement</h5>
+            <p>Get Real-world experience</p>
           </div>
         </div>
    </div>
@@ -160,55 +167,37 @@
 
   <!-- End 0f second container-->
   <!--- Start of third container-->
-  <section id="third" class="vision">
+  <section class="vision">
     <div class="container">
       <div class="third-wrapper">
-      <!-- <div class="wrapper-left">
-        <div class="text">
-          <p class="yellow"> we are on a mission</p>
-          <h1>We are on a mission to transform lives <br> globally.</h1>
-          <div class="folder">
-            <i><img src="./asset/img/Vector.png" alt="vector images"></i><p>Training and Mentorship</p>
-            <span><img src="./asset/img/Vector.png" alt="vector images"></span><p>Internship Placement</p>
-            <span><img src="./asset/img/Vector.png" alt="vector images"></span><p>Network</p>
-            <span><img src="./asset/img/Vector.png" alt="vector images"></span><p>Career Development</p>
-          </div>
-          <div class="Btn">
-            <button>Explore</button>
-          </div>
-        </div>
-      </div>
-      <div class="wrapper-right">
-        <img src="./asset/img/web-guys.jpg" alt="web guys">
-      </div> -->
       <div class="content" data-aos="fade-left">
         <div class="text">
-          <p class="yellow"> we are on a mission</p>
-          <h1 class="bigText">We are on a mission to transform lives globally.</h1>
+          <h6 class="yellow"> Our Mission</h6>
+          <h3 class="bigText">We are on a mission to transform lives globally.</h3>
           <div class="folder">
             <div class="checked">
               <div >
                 <img src="./asset/img/Vector.png" alt="vector images">
               </div>
-              <p>Training and Mentorship</p>
+              <p class="shortTxt">Training and Mentorship</p>
             </div>
             <div class="checked">
               <div >
                 <img src="./asset/img/Vector.png" alt="vector images">
               </div>
-              <p>Training and Mentorship</p>
+              <p class="shortTxt">Internship Placements</p>
             </div>
             <div class="checked">
               <div >
                 <img src="./asset/img/Vector.png" alt="vector images">
               </div>
-              <p>Training and Mentorship</p>
+              <p class="shortTxt">Networking</p>
             </div>
             <div class="checked">
               <div >
                 <img src="./asset/img/Vector.png" alt="vector images">
               </div>
-              <p>Training and Mentorship</p>
+              <p class="shortTxt">Career Development</p>
             </div>
             
           </div>
@@ -219,7 +208,7 @@
       </div>
       <div class="image" data-aos="fade-right">
         <div class="img-cont">
-          <img src="./asset/img/web-guys.jpg" alt="web guys">
+          <img class="imgs" src="./asset/img/web-guys.jpg" alt="web guys">
         </div>
       </div>
       </div>
@@ -236,8 +225,7 @@
       <div class="bottom" data-aos="fade-right">
         <p class="color">Network</p>
         <h1 class="fourth--text">Creating a community of young professionals.</h1>
-       <p> We are training world-class professionals and connecting them to high income opportunities for personal and societal impact.
-        We place our students on internships with partner organizations to give them real-life experiences.</p>
+       <p class="fTxt">We're creating a vibrant community of talented and ambitious young professionals who are committed to making a positive impact in the world. With our professional training and mentorship programs, you'll have the skills and knowledge you need to succeed in today's competitive job market. Plus, our internship placements and networking events will help you build valuable connections and open doors to new opportunities.</p>
         <div class="Btn btn--fourth">
           <button>Join a community</button>
         </div>
@@ -246,12 +234,12 @@
   </section>
   <!---End of fourth container-->
   <!---- start of video container-->
-  <section id="video">
+  <section class="videos">
     <div class="container">
       <div class="video-wrapper" data-aos="fade-up">
         <div class="slide">
-        <video controls width="900">
-        <source src="/media/cc0-videos/flower.webm" type="video/webm">
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/tU0f6Ch0JSk?start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
         </div>
       </div>
     </div>
@@ -262,41 +250,41 @@
      <div class="picture-wrapper">
         <div class="new-Page">
         <div class="first">
-          <h3 class="title">07</h3>
-          <p class="v">No of program</p>
-          <h3 class="video title">1552+</h3>
+          <h2 class="title">07</h2>
+          <p class="v">No. of Program</p>
+          <h2 class="video title">1552+</h2>
           <p class="v">Hours in class</p>
         </div>
         <div class="second">
-           <h3 class="video title">3465+</h3>
-          <p class="v">applicants</p>
-          <h3 class="video title">60%</h3>
+           <h2 class="video title">3465+</h2>
+          <p class="v">Applicants</p>
+          <h2 class="video title">60%</h2>
           <p class="v">participation in class</p>
         </div>
         <div class="third">
            <h3 class="video title">987+</h3>
-          <p class="v">scholarship given</p>
-          <h3 class="video title">$155,050,000+</h3>
-          <p class="v">scholarship value</p>
+          <p class="v">Scholarship given</p>
+          <h2 class="video title"> &#8358 155,050,000+</h2><span class="hidden">$156</span>
+          <p class="v">Scholarship value</p>
         </div>
    
   </section>
   <!---- End of video container-->
   <!---start of sponsership section-->
-  <section id="sponsership">
+  <section class="sponsership">
     <div class="container">
       <div class="sponsership--wrapper" data-aos="fade-up">
         <div class="sponsership--wrapper--text">
-          <p> want to help</p>
+          <p> want to help?</p>
           <h2>What can you do</h2>
         </div>
         <div class="sponsership--wrapper--item">
           <div class="item">
             <div class="pics">
-              <img src="./asset/img/Group 379 (2).png" alt="icon">
+              <img src="./asset/img/Group 271.png" alt="icon">
             </div>
-            <h2 class="sponsership--wrapper--title">Sponser a Student</h2>
-            <p class="sponsership--wrapper--texts">Sponser a student to learn the skills <br>  by providing learning facilities <br> and other needs
+            <h5 class="sponsership--wrapper--title">Sponser a Student</h5>
+            <p class="sponsership--wrapper--texts">Sponser a student to learn the skills by providing learning facilities and other needs
             </p>
             <div class="sponsership--button">
               <button>Donate now</button>
@@ -304,10 +292,10 @@
           </div>
           <div class="item">
             <div class="pics">
-              <img src="./asset/img/Group 379 (2).png" alt="icon">
+              <img src="./asset/img/Group 268.png" alt="icon">
             </div>
-            <h2 class="sponsership--wrapper--title">Sponser a Student</h2>
-            <p class="sponsership--wrapper--texts">Sponser a student to learn the skills <br>  by providing learning facilities <br> and other needs
+            <h5 class="sponsership--wrapper--title">Partner with Us</h5>
+            <p class="sponsership--wrapper--texts">Sponser a student to learn the skills   by providing learning facilities and other needs
             </p>
             <div class="sponsership--button">
               <button>Get started</button>
@@ -315,10 +303,10 @@
           </div>
           <div class="item">
             <div class="pics">
-              <img src="./asset/img/Group 379 (2).png" alt="icon">
+              <img src="./asset/img/Group 272.png" alt="icon">
             </div>
-            <h2 class="sponsership--wrapper--title">Sponser a Student</h2>
-            <p class="sponsership--wrapper--texts">Sponser a student to learn the skills <br>  by providing learning facilities <br> and other needs
+            <h5 class="sponsership--wrapper--title">Volunteer</h5>
+            <p class="sponsership--wrapper--texts">Sponser a student to learn the skills by providing learning facilities and other needs
             </p>
             <div class="sponsership--button">
               <button>Get started</button>
@@ -329,15 +317,15 @@
     </div>
   </section>
   <!---End of sponsership section-->
-  <section id="footer">
+  <section class="footer">
     <div class="container">
       <div class="wrapper--footer" data-aos="fade-up">
         <div class="wrapper-info">
-          <h2>Subscribe to  our newsletter </h2>
+          <h1 class="subheading">Subscribe to  our newsletter </h1>
         </div>
         <div class="wrapper--form">
           <form>
-            <input class="footer--input" type="text" placeholder="enter your email">
+            <input class="footer--input" type="text" placeholder="Enter email address">
              <button class=" btn--form">Subscribe</button>
           </form>
         </div>
@@ -388,7 +376,7 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 <!---End of copyright-->
 <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-<!-- <script src="./asset/main.js"></script> -->
+<script src="./asset/main.js"></script>
   <!--Start of Tawk.to Script-->
 </body>
 </html>
