@@ -103,3 +103,5 @@ $items.map((item) => {
 //   cursor.removeClass("active");
 //   follower.removeClass("active");
 // });
+
+// const btnNav = document.querySelector();

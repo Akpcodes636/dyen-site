@@ -192,7 +192,8 @@ a {
   /* margin-top: 2rem; */
   /* line-height: 1.5; */
   font-weight: 600;
-  margin: 40px 270px;
+  /* margin: 40px 270px; */
+  padding: 40px 270px;
   /* background-color: red; */
 }
 .second--heading {
