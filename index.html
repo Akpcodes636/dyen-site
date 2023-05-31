@@ -6,19 +6,19 @@
     <!----Always include this line of code-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DYEN | Welcome</title>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="./asset/style.css">
     <link rel="stylesheet" href="./asset/queries.css">
     <link rel="stylesheet" href="./asset/general.css">
      <link rel="icon" type="image/x-icon" href="./asset/logo/dyen logo.png">
 </head>
 <body>
-  <header class="header ">
+  <header class="header nav-open">
     <div class="header-container container">
       <div class="logo">
           <img src="./asset/logo/dyen logo.png" alt="logo">
       </div>
-      <div class="nav">
+      <div class="nav hide-nav-bar">
           <div class="input">
               <input type="search" placeholder="Search for courses ">
           </div>
@@ -29,6 +29,10 @@
               <li><a href="#">Store</a></li>
           </ul>
       </div>
+      <button class="mobile-nav">
+        <ion-icon class="icon-mobile-nav open-icon hide-na" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav close-icon hide-nav" name="close-outline"></ion-icon>
+      </button>
       <!-- <div class="nav--bar">
          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16" />
@@ -48,7 +52,7 @@
 <!--- start of hero section  -->
    <section class="section--hero">
     <div class="hero">
-      <div class="hero--text-box">
+      <div class="hero--text-box" data-aos="left">
         <h1 class="heading-primary">
           Transforming Lives via Mentorship and Innovation
         </h1>
@@ -65,9 +69,8 @@
        </a>    
      </div>
     </div>
-    <div class="hero--img-box">
+    <div class="hero--img-box" data-aos="right">
      <img class="img-box"src="./asset/img/Group377 (2).png" alt="">
-    </div>
     </div>
    </section>
 
@@ -333,7 +336,7 @@
     </div>
   </section>
   <!---start of copyright-->
-  <section id="copyright">
+  <section class="copyright">
     <div class="container">
       <div class="wrapper--copyright">
         <h3>copyright</h3>
@@ -345,8 +348,19 @@
       </div>
     </div>
   </section>
-  <section id="smallscreen footer">
+  <section class="smallscreen footer">
     <div class="container">
+      <div class="wrapper--footer--small">
+        <div class="wrapper-info--small">
+          <h1 class="subheading--small">Subscribe to our newsletter</h1>
+        </div>
+        <div class="wrapper--form--small">
+        <form>
+          <input class="footer--input--small" type="text"  placeholder="Enter email address">
+          <button class="btn--form--small">Subscribe</button>
+        </form>
+        </div>
+      </div>
       <div class="smallscreen-wrapper">
         <div class="links">
           <div class="col1"><a href="#">About</a></div>
@@ -355,11 +369,11 @@
             <div class="col4"><a href="#">Community</a></div>
            <div class="col5"><a href="#">Terms</a></div>
            <div class="col6"><a href="#">Help</a></div>
-        
         </div>
       </div>
     </div>
   </section>
+ 
  
  <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -375,8 +389,10 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 <!---End of copyright-->
-<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-<script src="./asset/main.js"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script src="./asset/main.js"></script>
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <!--Start of Tawk.to Script-->
 </body>
 </html>

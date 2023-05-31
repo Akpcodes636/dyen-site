@@ -22,6 +22,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -54,6 +55,8 @@ a {
   position: fixed;
   z-index: 1000;
   padding: 1.5rem;
+  /* position: relative; */
+  /* overflow-x: hidden; */
 }
 
 .header-container {
@@ -68,6 +71,7 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 4.3rem;
+  transition: all 0.5s ease-in-out;
 }
 .nav ul {
   display: flex;
@@ -112,6 +116,22 @@ a {
 .nav .input input:hover {
   outline: 1px solid gold;
 }
+/* MOBILE */
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 2.8rem;
+  color: #333;
+}
+/* <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon> */
 
 .hero {
   min-height: 100vh;
@@ -135,6 +155,7 @@ a {
   background-color: var(--yellow);
   border-radius: 0.75rem;
   align-items: flex-end;
+  margin-top: 2rem;
 }
 .hero--btns:hover {
   box-shadow: 4px 4px 28px rgba(255, 194, 0, 0.5);
@@ -446,9 +467,6 @@ a {
   background-blend-mode: overlay;
   /* backdrop-filter: drop-shadow(2px 2px 20px blue); */
 }
-.hidden {
-  display: none;
-}
 .new-Page {
   display: flex;
   padding-top: 21rem;
@@ -553,6 +571,7 @@ a {
   transition-duration: 150ms;
   /* box-shadow: 0 5px 20px 5px #00000044; */
   box-shadow: 0 0px 28px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.22);
+  /* transform: matrix(1, 1, 1, 1, 1, 0); */
 }
 .sponsership--button button {
   /* padding: 1rem 3rem;
@@ -651,7 +670,7 @@ a {
 }
 /* start of copyright */
 .wrapper--copyright {
-  margin-top: 6.25rem;
+  margin: 6.25rem auto;
 }
 .wrapper--copyright h3 {
   font-weight: 100;
@@ -663,6 +682,18 @@ a {
   justify-content: space-between;
   font-size: 0.625rem;
 }
-.smallscreen-wrapper {
+.smallscreen.footer {
+  display: none;
+  background-color: rgb(146, 181, 187);
+}
+.wrappper--footer {
+  display: block;
+}
+/* .footer {
+  display: block;
+  background-color: blue;
+} */
+
+.hidden {
   display: none;
 }

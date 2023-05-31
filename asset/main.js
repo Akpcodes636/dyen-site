@@ -9,57 +9,68 @@
 //   mirror: false,
 //   anchorPlacement: "top-bottom",
 // });
-const $items = Array.from(document.querySelectorAll(".item"));
-console.log($items);
-
-let bounds;
-
-$items.map((item) => {
-  const $item = item;
-
-  function rotateToMouse(e) {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-    const leftX = mouseX - bounds.x;
-    const topY = mouseY - bounds.y;
-    const center = {
-      x: leftX - bounds.width / 2,
-      y: topY - bounds.height / 2,
-    };
-    const distance = Math.sqrt(center.x ** 2 + center.y ** 2);
-
-    $item.style.transform = `
-        scale3d(1.07, 1.07, 1.07)
-        rotate3d(
-          ${center.y / 100},
-          ${-center.x / 100},
-          0,
-          ${Math.log(distance) * 2}deg
-        )
-      `;
-
-    $item.querySelector(".glow").style.backgroundImage = `
-        radial-gradient(
-          circle at
-          ${center.x * 2 + bounds.width / 2}px
-          ${center.y * 2 + bounds.height / 2}px,
-          #ffffff55,
-          #0000000f
-        )
-      `;
-  }
-
-  $item.addEventListener("mouseenter", () => {
-    bounds = $item.getBoundingClientRect();
-    document.addEventListener("mousemove", rotateToMouse);
-  });
-
-  $item.addEventListener("mouseleave", () => {
-    document.removeEventListener("mousemove", rotateToMouse);
-    $item.style.transform = "";
-    $item.style.background = "";
-  });
+// AOS.init();
+// Mobile Nav
+const navBar = document.querySelector(".nav");
+const openNav = document.querySelector(".open-icon");
+const closeNav = document.querySelector(".close-icon");
+const mobileNav = document.querySelector(".mobile-nav");
+mobileNav.addEventListener("click", () => {
+  navBar.classList.toggle("hide-nav-bar");
+  openNav.classList.toggle("hide-nav");
+  closeNav.classList.toggle("hide-nav");
 });
+// const $items = Array.from(document.querySelectorAll(".item"));
+// console.log($items);
+
+// let bounds;
+
+// $items.map((item) => {
+//   const $item = item;
+
+//   function rotateToMouse(e) {
+//     const mouseX = e.clientX;
+//     const mouseY = e.clientY;
+//     const leftX = mouseX - bounds.x;
+//     const topY = mouseY - bounds.y;
+//     const center = {
+//       x: leftX - bounds.width / 2,
+//       y: topY - bounds.height / 2,
+//     };
+//     const distance = Math.sqrt(center.x ** 2 + center.y ** 2);
+
+//     $item.style.transform = `
+//         scale3d(1.07, 1.07, 1.07)
+//         rotate3d(
+//           ${center.y / 100},
+//           ${-center.x / 100},
+//           0,
+//           ${Math.log(distance) * 2}deg
+//         )
+//       `;
+
+//     $item.querySelector(".glow").style.backgroundImage = `
+//         radial-gradient(
+//           circle at
+//           ${center.x * 2 + bounds.width / 2}px
+//           ${center.y * 2 + bounds.height / 2}px,
+//           #ffffff55,
+//           #0000000f
+//         )
+//       `;
+//   }
+
+//   $item.addEventListener("mouseenter", () => {
+//     bounds = $item.getBoundingClientRect();
+//     document.addEventListener("mousemove", rotateToMouse);
+//   });
+
+//   $item.addEventListener("mouseleave", () => {
+//     document.removeEventListener("mousemove", rotateToMouse);
+//     $item.style.transform = "";
+//     $item.style.background = "";
+//   });
+// });
 
 // var cursor = $(".cursor"),
 //   follower = $(".cursor-follower");
