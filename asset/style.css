@@ -29,7 +29,7 @@ body {
   line-height: 1.5;
   color: #212529;
   font-weight: 400;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 a {
@@ -603,7 +603,7 @@ a {
   /* padding-top: 100px; */
   display: flex;
   align-items: flex-start;
-  padding: 76px 91px !important;
+  padding: 76px 68px !important;
   background-color: black;
   border-radius: 30px;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
@@ -696,4 +696,77 @@ a {
 
 .hidden {
   display: none;
+}
+/* Js Scroll */
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+.scrolled.fade-in {
+  animation: fade-in 1s ease-in-out both;
+}
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out;
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX();
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity:1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.section {
+  transition: transform 1s, opacity 1s;
+}
+.Wcontainer {
+max-width: 112rem !important;
+margin-top: 10rem;
+}
+.Ccontainer {
+  max-width: 112rem !important;
 }

@@ -12,3 +12,6 @@
 .grid--4--cols {
   grid-template-columns: repeat(4, 1fr);
 }
+/* .lazy_img {
+  filter:blur(20px)
+} */
